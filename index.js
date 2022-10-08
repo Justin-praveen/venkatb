@@ -14,7 +14,7 @@ fastify.register(cors,{
 // Run the server!
 const start = async () => {
   try {
-    await fastify.listen(process.env.PORT||{ port: 8000 })
+    await fastify.listen(process.env.PORT||{ port: 3000 })
   } catch (err) {
     fastify.log.error(err)
     process.exit(1)
